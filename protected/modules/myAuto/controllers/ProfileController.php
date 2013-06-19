@@ -2,38 +2,32 @@
 
 class ProfileController extends Controller
 {
-	public function actionIndex()
-	{
-		$this->render('index');
-	}
-public function actionEdit()
-	{
-		$this->render('index');
-	}
-	// Uncomment the following methods and override them if needed
-	/*
-	public function filters()
-	{
-		// return the filter configuration for this controller, e.g.:
-		return array(
-			'inlineFilterName',
-			array(
-				'class'=>'path.to.FilterClass',
-				'propertyName'=>'propertyValue',
-			),
-		);
-	}
 
-	public function actions()
-	{
-		// return external action classes, e.g.:
-		return array(
-			'action1'=>'path.to.ActionClass',
-			'action2'=>array(
-				'class'=>'path.to.AnotherActionClass',
-				'propertyName'=>'propertyValue',
-			),
-		);
-	}
-	*/
+    public function actionIndex()
+    {
+        $this->render('index');
+    }
+
+    public function actionEdit()
+    {
+        $model = User::model()->findByPk(Yii::app()->user->uid);
+        $this->pageTitle = 'Редактирование профиля';
+        if (isset($_POST['User'])) {
+            $password = $model->password;
+            $model->attributes = $_POST['User'];
+            if ($model->password == '') {
+                $model->password = $password;
+            } else {
+                $model->password = md5($model->password);
+            }
+            if ($model->validate()) {
+                $model->save();
+                Yii::app()->user->setFlash('success', '<strong>Успех!</strong> Профиль успешно отредактирован.');
+            } else {
+                Yii::app()->user->setFlash('error', '<strong>Ошибка!</strong> Проверте поля еще раз.');
+            }
+        }
+        $model->password = '';
+        $this->render('edit', array('model' => $model));
+    }
 }
