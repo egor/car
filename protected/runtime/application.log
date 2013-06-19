@@ -1,0 +1,88 @@
+2013/06/19 11:40:56 [error] [php] Undefined offset: 0 (/home/egorik/web/car.alt.dp.ua.local/www/framework/web/CUrlManager.php:653)
+Stack trace:
+#0 /home/egorik/web/car.alt.dp.ua.local/www/framework/web/CUrlManager.php(206): CUrlManager->processRules()
+#1 /home/egorik/web/car.alt.dp.ua.local/www/framework/base/CModule.php(387): CUrlManager->init()
+#2 /home/egorik/web/car.alt.dp.ua.local/www/framework/base/CApplication.php(510): CWebApplication->getComponent()
+#3 /home/egorik/web/car.alt.dp.ua.local/www/framework/web/CWebApplication.php(140): CWebApplication->getUrlManager()
+#4 /home/egorik/web/car.alt.dp.ua.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /home/egorik/web/car.alt.dp.ua.local/www/index.php(19): CWebApplication->run()
+REQUEST_URI=/
+in /home/egorik/web/car.alt.dp.ua.local/www/index.php (19)
+2013/06/19 11:41:58 [error] [php] Undefined offset: 0 (/home/egorik/web/car.alt.dp.ua.local/www/framework/web/CUrlManager.php:653)
+Stack trace:
+#0 /home/egorik/web/car.alt.dp.ua.local/www/framework/web/CUrlManager.php(206): CUrlManager->processRules()
+#1 /home/egorik/web/car.alt.dp.ua.local/www/framework/base/CModule.php(387): CUrlManager->init()
+#2 /home/egorik/web/car.alt.dp.ua.local/www/framework/base/CApplication.php(510): CWebApplication->getComponent()
+#3 /home/egorik/web/car.alt.dp.ua.local/www/framework/web/CWebApplication.php(140): CWebApplication->getUrlManager()
+#4 /home/egorik/web/car.alt.dp.ua.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /home/egorik/web/car.alt.dp.ua.local/www/index.php(19): CWebApplication->run()
+REQUEST_URI=/
+in /home/egorik/web/car.alt.dp.ua.local/www/index.php (19)
+2013/06/19 11:43:47 [error] [php] Undefined offset: 0 (/home/egorik/web/car.alt.dp.ua.local/www/framework/web/CUrlManager.php:653)
+Stack trace:
+#0 /home/egorik/web/car.alt.dp.ua.local/www/framework/web/CUrlManager.php(206): CUrlManager->processRules()
+#1 /home/egorik/web/car.alt.dp.ua.local/www/framework/base/CModule.php(387): CUrlManager->init()
+#2 /home/egorik/web/car.alt.dp.ua.local/www/framework/base/CApplication.php(510): CWebApplication->getComponent()
+#3 /home/egorik/web/car.alt.dp.ua.local/www/framework/web/CWebApplication.php(140): CWebApplication->getUrlManager()
+#4 /home/egorik/web/car.alt.dp.ua.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /home/egorik/web/car.alt.dp.ua.local/www/index.php(19): CWebApplication->run()
+REQUEST_URI=/
+in /home/egorik/web/car.alt.dp.ua.local/www/index.php (19)
+2013/06/19 11:43:47 [error] [php] Undefined offset: 0 (/home/egorik/web/car.alt.dp.ua.local/www/framework/web/CUrlManager.php:653)
+Stack trace:
+#0 /home/egorik/web/car.alt.dp.ua.local/www/framework/web/CUrlManager.php(206): CUrlManager->processRules()
+#1 /home/egorik/web/car.alt.dp.ua.local/www/framework/base/CModule.php(387): CUrlManager->init()
+#2 /home/egorik/web/car.alt.dp.ua.local/www/framework/base/CApplication.php(510): CWebApplication->getComponent()
+#3 /home/egorik/web/car.alt.dp.ua.local/www/framework/web/CWebApplication.php(140): CWebApplication->getUrlManager()
+#4 /home/egorik/web/car.alt.dp.ua.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /home/egorik/web/car.alt.dp.ua.local/www/index.php(19): CWebApplication->run()
+REQUEST_URI=/favicon.ico
+in /home/egorik/web/car.alt.dp.ua.local/www/index.php (19)
+2013/06/19 11:44:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in /home/egorik/web/car.alt.dp.ua.local/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/egorik/web/car.alt.dp.ua.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/egorik/web/car.alt.dp.ua.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/egorik/web/car.alt.dp.ua.local/www/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/19 11:44:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in /home/egorik/web/car.alt.dp.ua.local/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/egorik/web/car.alt.dp.ua.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/egorik/web/car.alt.dp.ua.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/egorik/web/car.alt.dp.ua.local/www/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/19 11:44:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in /home/egorik/web/car.alt.dp.ua.local/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/egorik/web/car.alt.dp.ua.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/egorik/web/car.alt.dp.ua.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/egorik/web/car.alt.dp.ua.local/www/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/19 11:44:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in /home/egorik/web/car.alt.dp.ua.local/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/egorik/web/car.alt.dp.ua.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/egorik/web/car.alt.dp.ua.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/egorik/web/car.alt.dp.ua.local/www/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/19 11:44:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in /home/egorik/web/car.alt.dp.ua.local/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/egorik/web/car.alt.dp.ua.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/egorik/web/car.alt.dp.ua.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/egorik/web/car.alt.dp.ua.local/www/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/19 11:45:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in /home/egorik/web/car.alt.dp.ua.local/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/egorik/web/car.alt.dp.ua.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/egorik/web/car.alt.dp.ua.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/egorik/web/car.alt.dp.ua.local/www/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
