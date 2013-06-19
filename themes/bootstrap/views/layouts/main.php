@@ -19,11 +19,12 @@
         array(
             'class'=>'bootstrap.widgets.TbMenu',
             'items'=>array(
-                array('label'=>'Home', 'url'=>array('/site/index')),
-                array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-                array('label'=>'Contact', 'url'=>array('/site/contact')),
-                array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-                array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+                array('label'=>'Главная', 'url'=>array('site/index')),
+                array('label'=>'О нас', 'url'=>array('/site/page', 'view'=>'about')),
+                array('label'=>'контакты', 'url'=>array('/site/contact')),
+                array('label'=>'Войти', 'url'=>array('site/login'), 'visible'=>Yii::app()->user->isGuest),
+                array('label'=>'Регистрация', 'url'=>array('site/registration'), 'visible'=>Yii::app()->user->isGuest),
+                array('label'=>'Выйти ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
             ),
         ),
     ),
@@ -37,14 +38,33 @@
 		)); ?><!-- breadcrumbs -->
 	<?php endif?>
 
-	<?php echo $content; ?>
+                            <div class="row-fluid">
+                <div class="span3">   
+                   
+                   <?php $this->widget('UserLeftMenuWidget'); ?>
+                    
+                             
+                    <div class="well sidebar-nav">
+
+                        <p>Сегодня: <?php echo date('d.m.Y'); ?></p>
+                            
+                    </div>
+                    <!--Sidebar content-->
+                </div>
+                <div class="span9">
+<?php echo $content; ?>
+
+                    <!--Body content-->
+                </div>
+            </div>
+                
+	<?php //echo $content; ?>
 
 	<div class="clear"></div>
 
 	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
-		All Rights Reserved.<br/>
-		<?php echo Yii::powered(); ?>
+		Copyright &copy; <?php echo date('Y'); ?> by ALT.<br/>
+		Будете красть идеи — переедем Вас катком.<br/>
 	</div><!-- footer -->
 
 </div><!-- page -->
