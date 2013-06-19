@@ -14,7 +14,7 @@
             array('label'=>'Mazda', 'icon' => 'ok-circle', 'url'=>array('site/index')),
             
             array('label' => 'Мой профиль'),
-            array('label'=>'Редактировать', 'icon' => 'pencil', 'url'=>array('site/index')),
+            array('label'=>'Редактировать', 'icon' => 'pencil', 'url'=>array('/myAuto/profile/edit')),
             
             array('label' => 'Помощь'),
             array('label'=>'Информация', 'icon' => 'info-sign', 'url'=>array('site/index')),
