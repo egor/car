@@ -7,8 +7,9 @@
             array('label' => 'Личный кабинет'),
             //array('label'=>'Мои автомобили', 'icon' => 'road', 'url'=>array('site/index')),
             array('label' => 'Мои автомобили'),
-            array('label'=>'Список', 'icon' => 'road', 'url'=>array('site/index')),
-            array('label'=>'Добавить', 'icon' => 'plus', 'url'=>array('site/index')),
+            array('label'=>'Список', 'icon' => 'road', 'url'=>array('/myAuto/auto/index')),
+            array('label'=>'Добавить', 'icon' => 'plus', 'url'=>array('/myAuto/auto/add')),
+            
             array('label' => 'Расход топлива'),
             array('label'=>'Таврия', 'icon' => 'ok-circle', 'url'=>array('site/index')),
             array('label'=>'Mazda', 'icon' => 'ok-circle', 'url'=>array('site/index')),
@@ -23,5 +24,17 @@
             
         ),
     ));
+                        
+                        $this->widget('bootstrap.widgets.TbMenu', array(
+        'type' => 'list',
+        'items' => 
+            
+            $autoList,
+            
+            
+            
+        
+    ));
+                        
                         ?>
                     </div> 

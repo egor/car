@@ -1,11 +1,11 @@
 <?php
-/* @var $this ProfileController */
+/* @var $this AutoController */
 
 $this->breadcrumbs=array(
-	'Profile',
+	'Auto',
 );
 ?>
-<h1><?php echo $this->pageHeader; ?></h1>
+<h1><?php echo $this->id . '/' . $this->action->id; ?></h1>
 
 <p>
 	You may change the content of this page by modifying

@@ -88,13 +88,17 @@ return array(
                 '/'=>'site/index',
                 '/login'=>'site/login',
                 '/registration'=>'site/registration',
+                
+                '/myAuto/auto'=>'myAuto/auto/index',
+                
                 '<controller:\w+>/<id:\d+>' => '<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
                 '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
-
+                
                 '<modules:\w+>/<controller:\w+>/<id:\d+>' => '<modules>/<controller>/view',
                 '<modules:\w+>/<controller:\w+>/<action:\w+>/<id:\d+>' => '<modules>/<controller>/<action>',
                 '<modules:\w+>/<controller:\w+>/<action:\w+>' => '<modules>/<controller>/<action>',
+                
 
             ),
         ),

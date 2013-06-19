@@ -17,7 +17,13 @@ class UserLeftMenuWidget extends CWidget
      */
     public function init()
     {        
-        $this->render('userLeftMenuWidget');
+        $model = UserCars::model()->findAll(array('condition'=> '`user_id`="'.Yii::app()->user->uid.'"', 'order'=>'name'));
+        $autoList[] = array('label' => 'Расход топлива');
+        foreach ($model as $value) {
+        $autoList[] = array('label'=>$value->name, 'icon' => 'ok-circle', 'url'=>array('/myAuto/fuel/'.$value->user_cars_id));
+            
+        }
+        $this->render('userLeftMenuWidget', array ('autoList'=>$autoList));
     }
 }
 ?>

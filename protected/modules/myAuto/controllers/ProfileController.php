@@ -30,4 +30,6 @@ class ProfileController extends Controller
         $model->password = '';
         $this->render('edit', array('model' => $model));
     }
+    
+    
 }
